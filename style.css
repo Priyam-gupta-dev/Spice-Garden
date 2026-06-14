@@ -34,9 +34,10 @@ nav {
     transition: transform 0.3s ease-in-out;
 }
 
-nav.nav-hidden{
+nav.nav-hidden {
     transform: translateY(-100%);
 }
+
 .topnav {
     display: flex;
     justify-content: space-around;
@@ -127,15 +128,14 @@ img {
 .fullmenu,
 .gallery,
 .testimonials,
-.reservation {
+.reservation{
     text-align: center;
     background-color: #fefee3;
     color: #2c6e49;
     padding: 50px 20px;
     border-top: 5px solid black;
-
+    overflow: hidden;
 }
-
 
 .reservation-form {
     margin-top: 30px;
@@ -144,6 +144,8 @@ img {
     gap: 20px;
     max-width: 700px;
     margin-inline: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .reservation-form input {
@@ -152,6 +154,8 @@ img {
     border-radius: 6px;
     font-size: 16px;
     background-color: #ffc9b9;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .reservation-form button {
@@ -163,6 +167,18 @@ img {
     font-size: 18px;
     cursor: pointer;
     border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    .reservation-form {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .reservation-form button {
+        grid-column: span 1; 
+    }
 }
 
 footer {
@@ -171,6 +187,7 @@ footer {
     color: #2c6e49;
     padding: 50px 20px;
     border-top: 5px solid black;
+    overflow: hidden; 
 }
 
 footer a {
@@ -178,14 +195,52 @@ footer a {
     color: #2c6e49;
 }
 
+footer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.contact h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.email-text {
+    word-break: break-all;
 }
 
 .copyright {
     grid-column: span 2;
-    padding: 14px;
-    font-size: 25px;
-    cursor: pointer;
+    padding-top: 30px;
+    font-size: 16px; 
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .copyright {
+        grid-column: span 1;
+        font-size: 14px;
+    }
+    
+    footer h1 {
+        font-size: 24px;
+    }
+    
+    .contact h3 {
+        font-size: 16px;
+    }
 }
