@@ -11,226 +11,385 @@
 
 <body>
 
-    <nav>
+    <nav id="navbar">
         <div class="topnav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="color: black;">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-            <div><b>Spice Garden 🍃</b></div>
-            <button class="btn"><a href="#reservations">Book a Table</a></button>
+            <div class="logo">Spice Garden 🍃</div>
+            <a href="#reservations" class="btn">Book a Table</a>
         </div>
+
         <div id="myLinks">
             <ul class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li> <a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="myFunction()">Home</a></li>
+                <li><a href="#about" onclick="myFunction()">About</a></li>
+                <li><a href="#menu" onclick="myFunction()">Menu</a></li>
+                <li><a href="#gallery" onclick="myFunction()">Gallery</a></li>
+                <li><a href="#reservations" onclick="myFunction()">Reservations</a></li>
+                <li><a href="#contact" onclick="myFunction()">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="home">
-        <div>
+        <div class="hero-content">
             <h1>Experience the Taste of Authentic Flavours</h1>
-            <h2>Fresh ingredients • Expert chefs • Cozy atmosphere</h2>
-            <button class="btn"><a href="#menu">View Menu</a></button>
-            <button class="btn"><a href="#reservations">Book a Table</a></button>
+            <p class="hero-subtitle">Fresh ingredients • Expert chefs • Cozy atmosphere</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#reservations" class="btn btn-secondary">Book a Table</a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about">
-        <div>
-            <h1>Our Story</h1><br>
-            <p>Spice Garden is a modern restaurant serving delicious Indian and continental cuisine. We believe food is
-                just a meal — it's an experience. Every dish is crafted with fresh ingredients and passion.</p><br>
-            <div>
-                <img src="images/fresh-ingredients.jpg" alt="Fresh Ingredients">
-                <img src="images/expert-chefs.jpg " alt="Expert Chefs">
-                <img src="images/restaurant-interior.jpg" alt="Cozy Ambience">
+        <div class="section-container">
+            <h2 class="about-title">Our Story</h2>
+            <p class="about-text">
+                Spice Garden is a modern restaurant serving delicious Indian and continental cuisine.
+                We believe food is not just a meal — it is an experience. Every dish is crafted with
+                fresh ingredients and passion.
+            </p>
+
+            <div class="cards-grid">
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/fresh-ingredients.jpg" alt="Fresh Ingredients">
+                    </div>
+                    <div class="card-body about-card-body">
+                        <h3>Fresh Ingredients</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/expert-chefs.jpg" alt="Expert Chefs">
+                    </div>
+                    <div class="card-body about-card-body">
+                        <h3>Expert Chefs</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/restaurant-interior.jpg" alt="Cozy Ambience">
+                    </div>
+                    <div class="card-body about-card-body">
+                        <h3>Cozy Ambience</h3>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="special">
-        <h1>Special Dishes</h1>
-        <div class="cards">
-            <div class="card">
-                <img src="images/cold-coffee.jpg" alt="Cold Coffee">
-                <h2>Cold Coffee</h2>
-                <p>Refreshing cold coffee made with freshly brewed coffee and milk.</p>
-                <h2>Price: ₹140</h2>
-                <button class="btn"><a href="#reservations">Order Now</a></button>
-            </div>
-            <div class="card">
-                <img src="images/paneer-tikka-masala.jpg" alt="Paneer Tikka Masala">
-                <h2>Paneer Tikka Masala</h2>
-                <p>Grilled cottage cheese in a rich, creamy tomato-based sauce, served with naan or rice.</p>
-                <h2>Price: ₹320</h2>
-                <button class="btn"><a href="#reservations">Order Now</a></button>
-            </div>
-            <div class="card">
-                <img src="images/pasta-alfredo.jpg" alt="Pasta Alfredo">
-                <h2>Pasta Alfredo</h2>
-                <p>Rich and creamy pasta dish made with butter, cream, and Parmesan cheese.</p>
-                <h2>Price: ₹260</h2>
-                <button class="btn"><a href="#reservations">Order Now</a></button>
-            </div>
-            <div class="card">
-                <img src="images/tomato-soup.jpg" alt="Tomato Soup">
-                <h2>Tomato Soup</h2>
-                <p>Classic tomato soup made with fresh tomatoes and herbs, served with crusty bread.</p>
-                <h2>Price: ₹120</h2>
-                <button class="btn"><a href="#reservations">Order Now</a></button>
+    <section id="menu" class="special">
+        <div class="special-container">
+            <h2 class="special-title">Special Dishes</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/cold-coffee.jpg" alt="Cold Coffee">
+                    </div>
+                    <div class="card-body">
+                        <h3>Cold Coffee</h3>
+                        <p class="card-desc">Refreshing cold coffee made with freshly brewed coffee and milk.</p>
+                        <p class="card-price">₹140</p>
+                        <a href="#reservations" class="card-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/paneer-tikka-masala.jpg" alt="Paneer Tikka Masala">
+                    </div>
+                    <div class="card-body">
+                        <h3>Paneer Tikka Masala</h3>
+                        <p class="card-desc">Grilled cottage cheese in a rich, creamy tomato sauce, served with naan or
+                            rice.</p>
+                        <p class="card-price">₹320</p>
+                        <a href="#reservations" class="card-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/pasta-alfredo.jpg" alt="Pasta Alfredo">
+                    </div>
+                    <div class="card-body">
+                        <h3>Pasta Alfredo</h3>
+                        <p class="card-desc">Rich and creamy pasta dish made with pure butter, fresh cream, and Parmesan
+                            cheese.</p>
+                        <p class="card-price">₹260</p>
+                        <a href="#reservations" class="card-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="images/tomato-soup.jpg" alt="Tomato Soup">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tomato Soup</h3>
+                        <p class="card-desc">Classic tomato soup made with fresh tomatoes and herbs, served with crusty
+                            bread.</p>
+                        <p class="card-price">₹120</p>
+                        <a href="#reservations" class="card-btn">Order Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="menu" class="fullmenu">
-        <div class="starters">
-            <h1>Starters</h1><br>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/veg-spring-rolls.jpg" alt="Veg Spring Rolls">
-                    <h2>Veg Spring Rolls</h2>
-                    <p>Crispy spring rolls filled with fresh vegetables, served with sweet chili sauce.</p>
-                    <h2>Price: ₹180</h2>
-                </div>
-                <div class="card">
-                    <img src="images/garlic-bread.jpg" alt="Garlic Bread">
-                    <h2>Garlic Bread</h2>
-                    <p>Crunchy bread slices infused with garlic butter, served warm.</p>
-                    <h2>Price: ₹150</h2>
-                </div>
-            </div>
-        </div>
-        <div class="main-course">
-            <h1>Main Course</h1><br>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/butter-chicken.jpg" alt="Butter Chicken">
-                    <h2>Butter Chicken</h2>
-                    <p>Rich and creamy tomato-based curry with tender chicken pieces, served with naan or rice.</p>
-                    <h2>Price: ₹350</h2>
-                </div>
-                <div class="card">
-                    <img src="images/veg-biryani.jpg" alt="Veg Biryani">
-                    <h2>Veg Biryani</h2>
-                    <p>Flavorful rice dish made with vegetables and aromatic spices, served with raita.</p>
-                    <h2>Price: ₹280</h2>
+
+    <section id="full-menu" class="fullmenu">
+        <div class="menu-container">
+            <div class="menu-category">
+                <h2 class="category-title">Starters</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/veg-spring-rolls.jpg" alt="Veg Spring Rolls">
+                        </div>
+                        <div class="card-body">
+                            <h3>Veg Spring Rolls</h3>
+                            <p class="card-desc">Crispy spring rolls filled with fresh vegetables, served with sweet
+                                chili sauce.</p>
+                            <p class="card-price">₹180</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/garlic-bread.jpg" alt="Garlic Bread">
+                        </div>
+                        <div class="card-body">
+                            <h3>Garlic Bread</h3>
+                            <p class="card-desc">Crunchy bread slices infused with garlic butter, served warm.</p>
+                            <p class="card-price">₹150</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="fast-food">
-            <h1>Fast Food</h1><br>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
-                    <h2>Margherita Pizza</h2>
-                    <p>Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.</p>
-                    <h2>Price: ₹300</h2>
+
+            <div class="menu-category">
+                <h2 class="category-title">Main Course</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+                        </div>
+                        <div class="card-body">
+                            <h3>Butter Chicken</h3>
+                            <p class="card-desc">Rich and creamy tomato-based curry with tender chicken pieces, served
+                                with naan or rice.</p>
+                            <p class="card-price">₹350</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/veg-biryani.jpg" alt="Veg Biryani">
+                        </div>
+                        <div class="card-body">
+                            <h3>Veg Biryani</h3>
+                            <p class="card-desc">Flavorful rice dish made with vegetables and aromatic spices, served
+                                with raita.</p>
+                            <p class="card-price">₹280</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="drinks">
-            <h1>Drinks</h1><br>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/mojito.jpg" alt="Mojito">
-                    <h2>Mojito</h2>
-                    <p>Refreshing mint-based cocktail with lime and soda.</p>
-                    <h2>Price: ₹160</h2>
+
+            <div class="menu-category">
+                <h2 class="category-title">Fast Food</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
+                        </div>
+                        <div class="card-body">
+                            <h3>Margherita Pizza</h3>
+                            <p class="card-desc">Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.
+                            </p>
+                            <p class="card-price">₹300</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="menu-category">
+                <h2 class="category-title">Drinks</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/mojito.jpg" alt="Mojito">
+                        </div>
+                        <div class="card-body">
+                            <h3>Mojito</h3>
+                            <p class="card-desc">Refreshing mint-based cocktail with lime and soda.</p>
+                            <p class="card-price">₹160</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="gallery" class="gallery">
-        <h1>Moments & Memories</h1><br>
-        <div class="gallery-img">
-            <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
-            <img src="images/restaurant-exterior.jpg" alt="Restaurant Exterior">
-            <img src="images/margherita-pizza.jpg" alt="Dish 1">
-            <img src="images/cold-coffee.jpg" alt="Dish 2">
-            <img src="images/pasta-alfredo.jpg" alt="Dish 3">
-            <img src="images/paneer-tikka-masala.jpg" alt="Dish 4">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Moments & Memories</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/restaurant-interior.jpg" alt="Cozy Restaurant Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/restaurant-exterior.jpg" alt="Restaurant Exterior Frontage">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/margherita-pizza.jpg" alt="Freshly Baked Margherita Pizza">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cold-coffee.jpg" alt="Chilled Whipped Cold Coffee">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pasta-alfredo.jpg" alt="Creamy Pasta Alfredo Dish">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/paneer-tikka-masala.jpg" alt="Spicy Paneer Tikka Masala">
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="testimonials" class="testimonials">
-        <h1>What Our Customers Say</h1><br>
-        <div class="cards">
-            <div class="card">
-                <p>“Amazing food and beautiful ambience. Highly recommended!” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Paras</h2>
-            </div>
-            <div class="card">
-                <p>“The food at Spice Garden is absolutely amazing! The flavors are authentic and the service is
-                    top-notch.
-                    Highly recommend!” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Pratigya</h2>
-            </div>
-            <div class="card">
-                <p>“Best restaurant in the city. Loved the pasta!” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Priyam</h2>
-            </div>
-            <div class="card">
-                <p>“I had a wonderful dining experience at Spice Garden. The ambiance is cozy and the staff is very
-                    friendly. Will definitely come back!” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Vansh</h2>
-            </div>
-            <div class="card">
-                <p>“Spice Garden offers a fantastic variety of dishes. The butter chicken is my favorite! Great
-                    value
-                    for
-                    money.” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Saiyam</h2>
-            </div>
-            <div class="card">
-                <p>“Perfect place for family dinner.” ⭐️⭐️⭐️⭐️⭐️</p>
-                <h2>- Gungun</h2>
+        <div class="testimonials-container">
+            <h2 class="testimonials-title">What Our Customers Say</h2>
+
+            <div class="cards-grid">
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“Amazing food and beautiful ambience. Highly recommended!”</p>
+                        <p class="reviewer-name">- Paras</p>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“The food at Spice Garden is absolutely amazing! The flavors are authentic
+                            and the service is top-notch. Highly recommend!”</p>
+                        <p class="reviewer-name">- Pratigya</p>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“Best restaurant in the city. Loved the pasta!”</p>
+                        <p class="reviewer-name">- Priyam</p>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“I had a wonderful dining experience at Spice Garden. The ambiance is cozy
+                            and the staff is very friendly. Will definitely come back!”</p>
+                        <p class="reviewer-name">- Vansh</p>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“Spice Garden offers a fantastic variety of dishes. The butter chicken is
+                            my favorite! Great value for money.”</p>
+                        <p class="reviewer-name">- Saiyam</p>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div class="card-body">
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="card-desc">“Perfect place for family dinner.”</p>
+                        <p class="reviewer-name">- Gungun</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="reservation" id="reservations">
-        <div class="container">
+
+    <section id="reservations" class="reservation">
+        <div class="reservation-container">
             <h2>Book Your Table</h2>
-            <p>Reserve your table in advance to avoid waiting.</p>
+            <p class="reservation-subtitle">Reserve your table in advance to avoid waiting.</p>
 
             <form class="reservation-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="number" placeholder="Guests" required>
-                <input type="date" required>
-                <input type="time" required>
-                <button type="submit">Reserve Now</button>
+                <input type="text" placeholder="Your Name" aria-label="Your Name" required>
+                <input type="tel" placeholder="Phone Number" aria-label="Phone Number" required>
+                <input type="email" placeholder="Email Address" aria-label="Email Address" required>
+                <input type="number" placeholder="Number of Guests" aria-label="Number of Guests" min="1" max="20"
+                    required>
+                <input type="date" aria-label="Reservation Date" required>
+                <input type="time" aria-label="Reservation Time" required>
+                <button type="submit" class="reservation-btn">Reserve Now</button>
             </form>
         </div>
     </section>
-    <!-- <br> -->
-    <footer>
-        <div class="footer-content">
-            <h1>Contact and other info:</h1>
-            <div class="contact" id="contact">
-                <h3>Location: New Delhi, India</h3>
-                <h3>Phone: +91 1234567890</h3>
-                <!-- Wrapping email in a class to prevent layout breaking -->
-                <h3 class="email-text">Email: priyamcodingschool@gmail.com</h3>
-                <h3>Every day: 11:00 AM - 11:00 PM</h3>
-                <h3>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">priyam_coding_school</a>
-                </h3>
 
-                <!-- Moved inside the grid container for correct positioning -->
-                <p class="copyright"><a href="#home">Copyright © 2026 Spice Garden. All rights reserved.</a></p>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <h2 class="footer-title">Contact & Info</h2>
+
+            <div class="contact-section" id="contact">
+                <ul class="contact-grid">
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span><strong>Location:</strong> New Delhi, India</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <span><strong>Phone:</strong> <a href="tel:+911234567890">+91 1234567890</a></span>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <span><strong>Email:</strong> <a href="mailto:priyamcodingschool@gmail.com"
+                                class="email-link">priyamcodingschool@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <i class="fa fa-clock"></i>
+                        <span><strong>Hours:</strong> Every day: 11:00 AM - 11:00 PM</span>
+                    </li>
+                    <li class="social-item">
+                        <i class="fa fa-instagram"></i>
+                        <span><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank"
+                                rel="noopener">@priyam_coding_school</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">Copyright &copy; 2026 <a href="#home">Spice Garden</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
 
-    <script src="script.js"></script>
+
+    <script>
+        function myFunction() {
+            const mobileMenu = document.getElementById("myLinks");
+            mobileMenu.classList.toggle("open");
+        }
+
+    </script>
+
 </body>
 
 </html>
