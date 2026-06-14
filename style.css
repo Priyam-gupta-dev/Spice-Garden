@@ -173,14 +173,6 @@ nav.nav-hidden {
     border-top: 4px solid #4c956c;
 }
 
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    color: #333333;
-}
-
 .about-card-body {
     padding: 20px;
     text-align: center;
@@ -213,7 +205,7 @@ nav.nav-hidden {
     margin-bottom: 60px;
 }
 
-.category-title {
+.title {
     font-size: 2rem;
     margin-bottom: 30px;
     position: relative;
@@ -221,7 +213,7 @@ nav.nav-hidden {
     padding-bottom: 5px;
 }
 
-.category-title::after {
+.title::after {
     content: '';
     position: absolute;
     left: 20%;
@@ -336,12 +328,6 @@ nav.nav-hidden {
     margin: 0 auto;
 }
 
-.gallery-title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -385,12 +371,6 @@ nav.nav-hidden {
 .testimonials-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.testimonials-title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    font-weight: bold;
 }
 
 .testimonial-card {
@@ -522,13 +502,6 @@ nav.nav-hidden {
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.footer-title {
-    font-size: 2.2rem;
-    margin-bottom: 35px;
-    font-weight: bold;
-    color: #fefee3;
 }
 
 .contact-grid {
