@@ -96,7 +96,7 @@ nav.nav-hidden {
     align-items: center;
     min-height: 80vh;
     text-align: center;
-    background-image: url('images/paneer-tikka-masala.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAe4_czvG18CCNsDfKsEIPr9-FyuGOdz7RSAxR8vzf2A&s=10');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,6 +181,11 @@ nav.nav-hidden {
 .about-card-body h3 {
     font-size: 1.2rem;
     margin: 0;
+}
+
+.special h2 {
+    padding: 10px;
+    margin: 10px;
 }
 
 .special,
